@@ -1,0 +1,25 @@
+﻿@model List<Deeneme2.Models.TravelForm>
+
+<h2>All Travel Forms</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Travel Start Date</th>
+            <th>Travel End Date</th>
+            <th>Country</th>
+            <!-- Diğer sütun başlıkları -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var form in Model)
+        {
+            <tr>
+                <td>@form.TravelStartDate</td>
+                <td>@form.TravelEndDate</td>
+                <td>@form.Country</td>
+                <!-- Diğer sütunlar -->
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+﻿@model Deeneme2.Models.TravelForm
+
+<h2>Create Travel Form</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="TravelStartDate"></label>
+        <input asp-for="TravelStartDate" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TravelEndDate"></label>
+        <input asp-for="TravelEndDate" class="form-control"  type="date"  />
+    </div>
+    <div class="form-group">
+        <label asp-for="Country"></label>
+        <input asp-for="Country" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TCIdentityNumber"></label>
+        <input asp-for="TCIdentityNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="BirthDate"></label>
+        <input asp-for="BirthDate" class="form-control"  type="date"  />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
